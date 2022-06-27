@@ -1,0 +1,40 @@
+type Mutation {
+    addToChallenge(challenges: [ChallengeInput!]! challengeId: Int): Boolean!
+    addChallenge(challenges: [ChallengeInput!]!, startDate: String! endDate: String!): Challenge!
+}
+
+type Query {
+    allChallenges: [Challenge]!
+    challenge(challenge_id: String!): Challenge!
+    latestChallenge: Challenge
+    allUserChallenges: [UserChallenge!]
+    userChallenge(challenge_id: String!): UserChallenge
+}
+
+type Challenge {
+    challengeId: Int!
+    startDate: String!
+    endDate: String!
+    challenges: [ChallengeItem]!
+}
+
+type ChallengeItem {
+    id: Int!
+    name: String!
+    type: String!
+    requirements: String!
+}
+
+type UserChallenge {
+    challenge_item_id: Int
+    progress: Float
+    isComplete: Boolean
+    challengeItem: ChallengeItem
+}
+
+
+input ChallengeInput {
+    name: String!
+    typeId: Int!
+    requirements: String!
+}

@@ -1,0 +1,32 @@
+type Mutation {
+    finishRun(locations: [LocationInput!]! distance: Int!, time: Int! rating: Int): UserRoute!
+}
+
+type Query {
+    userRoute(id: String!): UserRoute
+    allUserRoutes: [UserRoute!]
+}
+
+type UserRoute {
+    ID: Int!
+    experience: Int!
+    coins: Int!
+    rating: Int
+    locationData: [LocationData!]!
+}
+
+type LocationData {
+    latitude: Float!
+    longtitude: Float!
+    altitude: Float!
+    speed: Float!
+    time: Float!
+}
+
+input LocationInput {
+    latitude: Float!
+    longtitude: Float!
+    altitude: Float!
+    speed: Float!
+    time: Float!
+}

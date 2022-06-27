@@ -1,0 +1,28 @@
+.NavBar {
+    background-color: lightblue;
+    display: flex;
+    align-items:center;
+    height: 50px;
+
+    button {
+        height: 100%;
+        background-color: transparent;
+        border: 0;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: black;
+        font-size: 20px;
+        padding: 0 20px;
+
+        &:hover {
+            background-color: white;
+            color: black;
+        }
+    }
+
+    .AlignRight {
+        height: 100%;
+        margin-left:auto;
+        display: flex;
+        align-items:center;
+    }
+}

@@ -1,0 +1,4 @@
+type Mutation {
+    login(email: String! password: String!): AuthPayload
+    googleLogin(name: String, email: String): AuthPayload
+}

@@ -1,0 +1,31 @@
+type Mutation {
+    addAchievement(name: String! requirements: String! typeId: Int!): Achievement!
+    addAchievementType(typeName: String!): AchievementType
+}
+
+type Query {
+    allAchievements: [Achievement!]!
+    achievement(id: String!): Achievement
+    achievementType(id: String!): AchievementType
+    allAchievementTypes:[AchievementType]!
+    allUserAchievements: [UserAchievement]!
+    userAchievement(achievement_id: String!): UserAchievement
+}
+
+type UserAchievement {
+    ID: ID
+    progress: Float
+    isComplete: Boolean
+}
+
+type Achievement {
+    id: Int
+    name: String
+    type: String
+    requirements: String
+}
+
+type AchievementType {
+    id: Int!
+    name: String!
+}

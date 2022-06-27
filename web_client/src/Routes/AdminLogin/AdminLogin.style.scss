@@ -1,0 +1,22 @@
+.LoginForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid black 1px;
+    padding: 10px;
+
+    label {
+        margin: 5px 0;
+    }
+
+    input {
+        margin-top: 5px;
+    }
+
+    &-Wrapper {
+        width: 100vw;
+        height: 100vh;
+        display:flex;justify-content:center;align-items:center;
+    }
+}

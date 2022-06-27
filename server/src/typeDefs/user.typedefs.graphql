@@ -1,0 +1,54 @@
+type User {
+    ID: ID,
+    username: String!
+    number: Int!
+    email: String!
+    coins: Int!
+    experience: Int!
+    role: String!
+    inventory: [Item]
+    boughtItems: [ID]
+    equippedItems: [ID]
+    challenges: [Challenge]
+    achievements: [Task]
+    runs: [UserRoute!]
+    friends: [User]
+    friendRequests: [FriendRequests]
+}
+
+type Task {
+    ID: ID!
+    name: String!
+    type: TaskType!
+    requirements: String!
+    task_id: Int!
+    progress: Int
+}
+
+type Challenge {
+    ID: ID!
+    name: String!
+    type: TaskType!
+    requirements: String!
+    task_id: Int!
+    progress: Int
+    challenge_id: Int
+    coins: Int
+    experience: Int
+}
+
+enum TaskType {
+    CHALLENGE,
+    ACHIEVEMENT,
+    USER_CHALLENGE
+}
+
+type FriendRequests {
+    name: String!
+    id: ID!
+}
+
+type AuthPayload {
+    token: String!
+    user: User!
+}

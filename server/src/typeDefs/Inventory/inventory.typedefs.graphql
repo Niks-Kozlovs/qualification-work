@@ -1,0 +1,23 @@
+type Mutation {
+    buyItem(itemId: Int!): Item!
+    equipItem(itemId: Int!): Boolean!
+    addItem(name: String! image_name: String! cost: Int type: String! level: Int): Item!
+    unequipItem(itemId: Int!): Boolean!
+}
+
+type Query {
+    userEquippedItems: [Item!]
+    userBoughtItems: [Item!]!
+    allItems: [Item!]!
+    item(ID: ID!): Item
+}
+
+type Item {
+    ID: ID!
+    name: String!
+    description: String
+    image_name: String!
+    price: Int!
+    level: Int!
+    type: String!
+}
