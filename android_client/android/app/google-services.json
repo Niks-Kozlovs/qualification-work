@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "130783615476",
+    "firebase_url": "https://brilliant-tower-270011.firebaseio.com",
+    "project_id": "brilliant-tower-270011",
+    "storage_bucket": "brilliant-tower-270011.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:130783615476:android:868d7f48447445cb26c1a1",
+        "android_client_info": {
+          "package_name": "com.aceyourtrace.RunningApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "130783615476-odg6cjda3cju19st60jgstbqiq2ngjf6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aceyourtrace.RunningApp",
+            "certificate_hash": "419a66182f57a6e2be90d8ae2b10dbecbdf74744"
+          }
+        },
+        {
+          "client_id": "130783615476-btrp80ng8n91qc6msdhgi97te8ks82u1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfyeXdxCcnJKOab-7OqcB6myXwuVJZqFA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "130783615476-btrp80ng8n91qc6msdhgi97te8ks82u1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
